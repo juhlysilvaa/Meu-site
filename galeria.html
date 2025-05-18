@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+       <title>Liga Feminina de TI UVV| Galeria </title>
+        <meta name="description" content="A Liga Feminina de TI da UVV é a primeira do Espírito Santo. Formada por estudantes e profissionais, promove inclusão, capacitação e protagonismo feminino na tecnologia.">
+        <meta name="keywords" content="UVV,A Liga Feminina de TI da UVV,protagonismo feminino,Espírito Santo">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>  
+    <a href="index.html">
+            <img src="https://i.ibb.co/tptYVwgR/Logo-Sem-Fundo.png" alt="Logo da Liga Feminina de TI" class="logo-nav">
+            </a>
+        <a href="index.html" class="nav-btn">Início</a>
+        <a href="historia.html" class="nav-btn">História</a>
+        <a href="missao.html" class="nav-btn">Missão, Visão e Valores</a>
+        <a href="processo.html" class="nav-btn">Processo Seletivo</a>
+        <a href="membros.html" class="nav-btn">Membros</a>
+        <a href="galeria.html" class="nav-btn">Galeria</a>
+        <a href="contato.html" class="nav-btn">Contato</a>
+    </nav>
+    <main>
+            <section class="galeria-fotos">
+                <h2>Galeria de Fotos e Vídeos</h2>
+                <h3>Galeria de Fotos</h3>
+                <div class="galeria">
+                  <img src="https://i.ibb.co/6cJXTnNr/FOTO-pgn.png" alt="Foto 1">
+                  <img src="https://i.ibb.co/6cJXTnNr/FOTO-pgn.png"alt="Foto 2">
+                  <img src="https://i.ibb.co/S434rXgs/2-FOTO-pgn.png" alt="Foto 3">
+                  <img src="https://i.ibb.co/S434rXgs/2-FOTO-pgn.png" alt="Foto 4">
+                </div>
+
+               
+                <p>Instagram da liga com fotos:</p>
+                <br><a href="https://www.instagram.com/liga_femininadeti/" target="_blank" rel="noopener noreferrer">https://www.instagram.com/liga_femininadeti/</a>
+            </section>
+            <section>
+    <h3>Envie sua imagem para a galeria</h3>
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+      <label for="imageInput">Escolha uma imagem:</label><br>
+      <input type="file" accept="image/*" id="imageInput" name="foto" required><br>
+      <img id="preview" src="" style="max-width: 300px; margin-top: 10px;"><br><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <script>
+    const input = document.getElementById('imageInput');
+    const preview = document.getElementById('preview');
+
+    input.addEventListener('change', function () {
+      const file = input.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          preview.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <footer><p>&copy; 2025 Liga Feminina de TI da UVV. Todos os direitos reservados.</p>
+                <p>Desenvolvido por participantes do 1º Hackathon da Liga.</p></footer>
+             <div></div>
+    </main>
+</body>
+</html>
