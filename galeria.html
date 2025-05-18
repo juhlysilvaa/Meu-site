@@ -35,44 +35,7 @@
                 <br><a href="https://www.instagram.com/liga_femininadeti/" target="_blank" rel="noopener noreferrer">https://www.instagram.com/liga_femininadeti/</a>
             </section>
             <section>
-    <h3>Envie sua imagem para a galeria</h3>
-    <form action="upload.php" method="POST" enctype="multipart/form-data">
-      <label for="imageInput">Escolha uma imagem:</label><br>
-      <input type="file" accept="image/*" id="imageInput" name="foto" required><br>
-      <img id="preview" src="" style="max-width: 300px; margin-top: 10px;"><br><br>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <script>
-    const input = document.getElementById('imageInput');
-    const preview = document.getElementById('preview');
-
-    input.addEventListener('change', function () {
-      const file = input.files[0];
-      if (file) {
-        const reader = new FileReader();
-        reader.onload = function (e) {
-          preview.src = e.target.result;
-        };
-        reader.readAsDataURL(file);
-      }
-    });
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </section>
              <footer><p>&copy; 2025 Liga Feminina de TI da UVV. Todos os direitos reservados.</p>
                 <p>Desenvolvido por participantes do 1º Hackathon da Liga.</p></footer>
              <div></div>
